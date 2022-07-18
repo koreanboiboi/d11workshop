@@ -30,9 +30,23 @@ git branch -delete <branch name>
 
 git checkout -b develop master
 
-git add * //add to develop branch
+git add * (add to develop branch)
 
 git commit -m "add remde file"
 
-git push -u origin develop //push to remote git develop branch
+git push -u origin develop (push to remote git develop branch)
 
+git checkout master
+
+git merge develop (merge changes done in develop branch into master branch)
+
+git push -u origin master
+
+// make changes in master, and need to synchronise this change to develop branch
+// assume changes has already been checked into master branch
+
+git checkout develop
+
+git merge master (merge changes done in master branch into develop branch)
+
+git push -u origin develop
