@@ -29,3 +29,10 @@ git branch -a
 git branch -delete <branch name>
 
 git checkout -b develop master
+
+git add * //add to develop branch
+
+git commit -m "add remde file"
+
+git push -u origin develop //push to remote git develop branch
+
